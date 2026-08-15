@@ -1,0 +1,217 @@
+{%extends ("base.html")%}
+{%block content%}
+
+<section class="inicio">
+
+    <div class="inicio-contenido">
+
+        <div class="inicio-texto">
+
+            <h2>
+                VEMOS POR<br>
+                <span>TUS OJOS</span>
+            </h2>
+
+            <p>
+                Cuidamos tu salud visual con tecnología de última generación,
+                productos de alta calidad y un equipo humano comprometido
+                con brindarte una experiencia única y confiable.
+            </p>
+
+            <div class="beneficios">
+
+                <div class="beneficio">
+                    <span>◉</span>
+                    <strong>Examen visual<br>profesional</strong>
+                </div>
+
+                <div class="beneficio">
+                    <span>⚙</span>
+                    <strong>Tecnología de<br>última generación</strong>
+                </div>
+
+                <div class="beneficio">
+                    <span>◎</span>
+                    <strong>Productos<br>originales</strong>
+                </div>
+
+                <div class="beneficio">
+                    <span>♙</span>
+                    <strong>Atención<br>personalizada</strong>
+                </div>
+
+            </div>
+
+            <button>Agenda tu examen visual</button>
+
+        </div>
+
+
+        <div class="inicio-imagen">
+
+            <img src="{{ url_for('static', filename='img/imagen1.webp') }}" alt="Mujer usando gafas">
+
+            <div class="examen-circulo">
+                <strong>EXAMEN VISUAL<br>PROFESIONAL</strong>
+                <p>Con tecnología<br>de última<br>generación</p>
+                <span>✓</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="productos">
+    <h2>Productos</h2>
+
+    <div class="productos-container">
+
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/monturas.webp')}}" alt="Monturas">
+            <h3>Monturas</h3>
+            <p>Diseños modernos para cada estilo.</p>
+            <a href="#">Ver más →</a>
+        </div>
+
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/gafas_sol.webp')}}" alt="Gafas de Sol">
+            <h3>Gafas de Sol</h3>
+            <p>Protección y comodidad para tu visión.</p>
+            <a href="#">Ver más →</a>
+        </div>
+
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/monturas.webp')}}" alt="Lentes de Contacto">
+            <h3>Lentes de Contacto</h3>
+            <p>Libertad visual para tu día a día.</p>
+            <a href="#">Ver más →</a>
+        </div>
+
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/monturas.webp')}}" alt="Lentes Oftálmicos">
+            <h3>Lentes Oftálmicos</h3>
+            <p>Claridad y precisión para ver mejor.</p>
+            <a href="#">Ver más →</a>
+        </div>
+
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/accesorios.webp')}}" alt="Accesorios y Cuidado">
+            <h3>Accesorios y Cuidado</h3>
+            <p>Todo lo que necesitas para proteger tus lentes.</p>
+            <a href="#">Ver más →</a>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="vision">
+
+    <div class="vision-info">
+        <h2>VISIÓN CLARA,<br>VIDA MEJOR</h2>
+
+        <p>
+            En One Vision trabajamos para que las personas vean bien,
+            se vean bien y se sientan bien. Combinamos salud visual,
+            innovación y estilo en un solo lugar.
+        </p>
+
+        <button>Conoce más →</button>
+
+        <img src="img/vision.jpg" alt="Visión">
+    </div>
+
+    <div class="pagos">
+        <h2>PAGA CÓMODO Y SEGURO</h2>
+
+        <p>Elige el medio de pago que más te convenga.</p>
+
+        <div class="medios-pago">
+            <div class="medio-pago">
+                <img src="img/bancolombia.png" alt="Bancolombia">
+            </div>
+
+            <div class="medio-pago">
+                <img src="img/davivienda.png" alt="Davivienda">
+            </div>
+
+            <div class="medio-pago">
+                <img src="img/visa.png" alt="Visa">
+            </div>
+
+            <div class="medio-pago">
+                <img src="img/mastercard.png" alt="Mastercard">
+            </div>
+
+            <div class="medio-pago">
+                <img src="img/nequi.png" alt="Nequi">
+            </div>
+
+            <div class="medio-pago">
+                <img src="img/daviplata.png" alt="Daviplata">
+            </div>
+
+            <div class="medio-pago">
+                <img src="img/addi.png" alt="Addi">
+            </div>
+
+            <div class="medio-pago">
+                <img src="img/sistecredito.png" alt="Sistecrédito">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="instagram">
+    <h2>Síguenos en Instagram</h2>
+    <p>@opticalia_onevision</p>
+    <p>@onevisionopticas</p>
+</section>
+
+
+<section class="sedes">
+    <h2>Encuéntranos en nuestras sedes</h2>
+
+    <div class="sedes-container">
+
+        <div class="sede">
+            <img src="" alt="local 113">
+            <h3>Bogotá</h3>
+            <p>C.C El Parque</p>
+            <p>Cr.7 # 12 - 54 Local 113</p>
+            <p>Soacha - Cundinamarca</p>
+        </div>
+
+        <div class="sede">
+            <img src="" alt="local 139">
+            <h3>Bogotá</h3>
+            <p>C.C El parque</p>
+            <p>Cr.7 # 12 - 54 Local 139</p>
+            <p>Soacha - Cundinamarca</p>
+        </div>
+
+        <div class="sede">
+            <img src="" alt="local 134">
+            <h3>Bogotá</h3>
+            <p>C.C Mercurio</p>
+            <p>Cr.7 # 32 - 35</p>
+            <p>Soacha - Cundinamarca</p>
+        </div>
+
+        <div class="sede">
+            <img src="" alt="local 110">
+            <h3>Bogotá</h3>
+            <p>C.C Mi Centro Porvenir</p>
+            <p>Cll. 54F sur # 93c - 18</p>
+            <p>Bosa Porvenir</p>
+        </div>
+
+    </div>
+</section>
+
+{%endblock%}

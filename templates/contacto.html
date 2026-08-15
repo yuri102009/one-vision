@@ -1,0 +1,103 @@
+{%extends ("base.html")%}
+{%block content%}
+
+<section>
+    <div>
+        <h1>CONTACTANOS</h1>
+        <h2>Estamos aquí para ayudarte</h2>
+        <p>Comunicate con nosotros o visitanos en cualquiera de nuestras sedes.</p>
+
+        <div>
+            <h3>Teléfono</h3>
+            <p>+57 1 123 4567</p>
+        </div>
+
+        <div>
+            <h3>WhatsApp</h3>
+            <p>+57 1 123 4567</p>
+        </div>
+
+        <div>
+            <h3>Correo Electrónico</h3>
+            <p>info@onevision.com</p>
+        </div>
+
+        <div>
+            <h3>Horario de Atención</h3>
+            <p>Lunes a Sábado: 9:30 AM - 7:30 PM</p>
+            <p>Domingo y Festivos: 10:00 AM - 7:00 PM</p>
+        </div>
+
+    </div>
+
+    <div>
+        <h2>Envianos tu mensaje</h2>
+
+        <form>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p>Te responderemos lo antes posible.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Encuéntranos en nuestras sedes</h2>
+
+    <article>
+        <img src="" alt="local 113">
+        <h3>Bogotá</h3>
+        <p>C.C El Parque</p>
+        <P>Cr.7 # 12 - 54 Local 113</P>
+        <p>Soacha - Cundinamarca</p>
+    </article>
+
+    <article>
+        <img src="" alt="local 139">
+        <h3>Bogotá</h3>
+        <p>C.C El parque</p>
+        <p>Cr.7 # 12 - 54 Local 139</p>
+        <p>Soacha - Cundinamarca</p>
+    </article>
+
+    <article>
+        <img src="" alt="local 134">
+        <h3>Bogotá</h3>
+        <p>C.C Mercurio</p>
+        <p>Cr.7 # 32 - 35 </p>
+        <p>Soacha - Cundinamarca</p>
+    </article>
+
+    <article>
+        <img src="" alt="local 110">
+        <h3>Bogotá</h3>
+        <p>C.C Mi Centro Porvenir </p>
+        <p>Cll. 54F sur # 93c - 18</p>
+        <p>Bosa Porvenir</p>
+    </article>
+</section>
+
+<!--seccion mapa-->
+<section>
+    <div>
+        <h2>¿Hay una sede cerca de ti?</h2>
+        <p>Encuentra la óptica One Vision más cercana y visítanos para recibir la mejor atención en salud visual.</p>
+        <button>Ver en el mapa</button>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OllexgVMC2GfC4rKq4MWyo_pxP7354w&ehbc=2E312F"
+            width="640" height="480"></iframe>
+    </div>
+</section>
+
+{%endblock %}

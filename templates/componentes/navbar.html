@@ -1,0 +1,13 @@
+<!--Barra de navegacion-->
+<header class="header">
+
+    <img class="logo" src="{{url_for('static', filename='img/logo.webp')}}" alt="logo">
+
+    <nav clas="nav">
+        <a href="{{ url_for('inicio') }}">inicio</a>
+        <a href="{{ url_for('nosotros') }}">nosotros</a>
+        <a href="{{ url_for('productos') }}">productos</a>
+        <a href="{{ url_for('servicios') }}">servicios</a>
+        <a href="{{ url_for('contacto') }}">contacto</a>
+    </nav>
+</header>
