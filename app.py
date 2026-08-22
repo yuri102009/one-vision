@@ -1,10 +1,13 @@
 from flask import Flask, render_template    
+from consultas import consulta, insertar 
+from conexion import obtener_conexion
 
 app = Flask(__name__)
 
 #ruta para pagina inicio 
 @app.route("/")
 def inicio():
+     # Llamada a la función para establecer la conexión
     return render_template("inicio.html")
 
 #ruta para pagina de contacto   
