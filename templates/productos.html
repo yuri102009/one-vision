@@ -1,13 +1,13 @@
 {%extends ("base.html")%}
 {%block content%}
 
-<!--seccion 1-->
-<section>
-    <div>
+<!-- SECCIÓN 1 -->
+<section class="productos-inicio">
+    <div class="productos-menu">
         <h1>PRODUCTOS</h1>
         <h3>Encuentra lo que necesitas para ver y lucir mejor.</h3>
 
-        <div>
+        <div class="categorias">
             <p>Monturas</p>
             <p>Gafas de Sol</p>
             <p>Lentes Oftálmicos</p>
@@ -16,94 +16,94 @@
         </div>
     </div>
 
-    <div>
-        <img src="" alt="imagen">
+    <div class="productos-banner">
+        <img src="{{url_for('static', filename='img/productos one vision.png')}}" alt="Productos OneVision">
     </div>
 </section>
 
-<!--seccion 2 - monturas destacadas-->
-<section>
+<!-- SECCIÓN 2 - MONTURAS DESTACADAS -->
+<section class="productos-seccion">
     <h2>MONTURAS DESTACADAS</h2>
 
-    <div>
+    <div class="productos-grid">
 
-        <div>
-            <img src="" alt="producto1">
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/producto1.png')}}" alt="Montura Clásica Negra">
             <h4>Montura Clásica Negra</h4>
             <p>$239.900</p>
         </div>
 
-        <div>
-            <img src="img/m2.png">
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/producto2.png')}}" alt="Montura Carey Redonda">
             <h4>Montura Carey Redonda</h4>
             <p>$259.900</p>
         </div>
 
-        <div>
-            <img src="img/m3.png">
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/producto3.png')}}" alt="Montura Transparente">
             <h4>Montura Transparente</h4>
             <p>$219.900</p>
         </div>
 
-        <div>
-            <img src="img/m4.png">
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/producto4.png')}}" alt="Montura Azul Moderna">
             <h4>Montura Azul Moderna</h4>
             <p>$249.900</p>
         </div>
 
-        <div>
-            <img src="img/m5.png">
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/producto5.png')}}" alt="Montura Hexagonal">
             <h4>Montura Hexagonal</h4>
             <p>$239.900</p>
         </div>
 
-        <div>
-            <img src="img/m6.png">
+        <div class="producto">
+            <img src="{{url_for('static', filename='img/producto6.png')}}" alt="Montura Titanio Gris">
             <h4>Montura Titanio Gris</h4>
             <p>$299.900</p>
         </div>
 
     </div>
-
 </section>
 
-<!--seccion 3 mas monturas -->
-<section>
+<!-- SECCIÓN 3 - MÁS MONTURAS -->
+<section class="productos-seccion">
     <h2>MÁS MONTURAS</h2>
-    <div>
 
-        <div>
-            <img src="img/m7.png">
+    <div class="productos-grid">
+
+        <div class="producto">
+            <img src="img/m7.png" alt="Montura Cuadrada Negra">
             <h4>Montura Cuadrada Negra</h4>
             <p>$259.900</p>
         </div>
 
-        <div>
-            <img src="img/m8.png">
+        <div class="producto">
+            <img src="img/m8.png" alt="Montura Café Claro">
             <h4>Montura Café Claro</h4>
             <p>$239.900</p>
         </div>
 
-        <div>
-            <img src="img/m9.png">
+        <div class="producto">
+            <img src="img/m9.png" alt="Montura Verde Oliva">
             <h4>Montura Verde Oliva</h4>
             <p>$239.900</p>
         </div>
 
-        <div>
-            <img src="img/m10.png">
+        <div class="producto">
+            <img src="img/m10.png" alt="Montura Dorada">
             <h4>Montura Dorada</h4>
             <p>$279.900</p>
         </div>
 
-        <div>
-            <img src="img/m11.png">
+        <div class="producto">
+            <img src="img/m11.png" alt="Montura Rosa Translúcida">
             <h4>Montura Rosa Translúcida</h4>
             <p>$239.900</p>
         </div>
 
-        <div>
-            <img src="img/m12.png">
+        <div class="producto">
+            <img src="img/m12.png" alt="Montura Azul Marino">
             <h4>Montura Azul Marino</h4>
             <p>$259.900</p>
         </div>
@@ -111,52 +111,54 @@
     </div>
 </section>
 
-<!--seccion 4 gafas de sol destacadas -->
-<section>
+<!-- SECCIÓN 4 - GAFAS DE SOL -->
+<section class="productos-seccion">
     <h2>GAFAS DE SOL DESTACADAS</h2>
 
-    <div>
+    <div class="productos-grid">
 
-        <div>
-            <img src="img/s1.png">
+        <div class="producto">
+            <img src="img/s1.png" alt="Aviador Clásico">
             <h4>Aviador Clásico</h4>
             <p>$249.900</p>
         </div>
 
-        <div>
-            <img src="img/s1.png">
-            <h4>Wayfaror Clásico</h4>
+        <div class="producto">
+            <img src="img/s1.png" alt="Wayfarer Clásico">
+            <h4>Wayfarer Clásico</h4>
             <p>$229.900</p>
         </div>
 
-        <div>
-            <img src="img/s1.png">
+        <div class="producto">
+            <img src="img/s1.png" alt="Redondas Metal">
             <h4>Redondas Metal</h4>
             <p>$259.900</p>
         </div>
 
-        <div>
-            <img src="img/s1.png">
+        <div class="producto">
+            <img src="img/s1.png" alt="Deportivas Polarizadas">
             <h4>Deportivas Polarizadas</h4>
             <p>$279.900</p>
         </div>
 
-        <div>
-            <img src="img/s1.png">
+        <div class="producto">
+            <img src="img/s1.png" alt="Clubmaster Clásico">
             <h4>Clubmaster Clásico</h4>
             <p>$239.900</p>
         </div>
 
-        <div>
-            <img src="img/s1.png">
+        <div class="producto">
+            <img src="img/s1.png" alt="Oversize Negro">
             <h4>Oversize Negro</h4>
             <p>$259.900</p>
         </div>
+
     </div>
 </section>
 
-<!--seccion 5 Beneficios-->
-<section>
+<!-- SECCIÓN 5 - BENEFICIOS -->
+<section class="beneficios-productos">
+
     <div>
         <p>Productos 100% originales de las mejores marcas.</p>
     </div>

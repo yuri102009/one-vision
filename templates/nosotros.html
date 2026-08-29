@@ -36,114 +36,135 @@
 
     <!--section 3-->
     <section class="valores">
+
         <h2>NUESTROS VALORES</h2>
 
-        <div class="valor">
-            <img src="./img/calidad.jpeg" alt="calidad">
-            <div>
-                <h3>Calidad</h3>
-                <p>Ofrecemos productos y servicios con los más altos estándares de calidad.</p>
-            </div>
+        <div class="contenedor-valores">
+
+            <article>
+                <img src="{{ url_for('static', filename='img/calidad.png') }}" alt="calidad">
+
+                <div>
+                    <h3>Calidad</h3>
+                    <p>Ofrecemos productos y servicios con los más altos estándares de calidad.</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='img/confianza.png') }}" alt="confianza">
+
+                <div>
+                    <h3>Confianza</h3>
+                    <p>Construimos relaciones basadas en la honestidad y transparencia.</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='img/compromiso.png') }}" alt="compromiso">
+
+                <div>
+                    <h3>Compromiso</h3>
+                    <p>Nos dedicamos al cuidado y bienestar de nuestros clientes.</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='img/innovacion.png') }}" alt="innovacion">
+                <div>
+                    <h3>Innovación</h3>
+                    <p>Incorporamos tecnología y tendencias que marcan la diferencia.</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='img/empatia.png') }}" alt="empatia">
+                <div>
+                    <h3>Empatía</h3>
+                    <p>Entendemos las necesidades de cada persona y las atendemos con calidez.</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='img/responsabilidad.png') }}" alt="responsabilidad">
+                <div>
+                    <h3>Responsabilidad</h3>
+                    <p>Asumimos con seriedad nuestro rol en la salud visual y el bienestar de la comunidad.</p>
+                </div>
+            </article>
+
         </div>
 
-        <div class="valor">
-            <img src="" alt="confianza">
-            <div>
-                <h3>Confianza</h3>
-                <p>Construimos relaciones basadas en la honestidad y transparencia.</p>
-            </div>
-        </div>
-
-        <div class="valor">
-            <img src="" alt="compromiso">
-            <div>
-                <h3>Compromiso</h3>
-                <p>Nos dedicamos al cuidado y bienestar de nuestros clientes.</p>
-            </div>
-        </div>
-
-        <div class="valor">
-            <img src="" alt="innovacion">
-            <div>
-                <h3>Innovación</h3>
-                <p>Incorporamos tecnología y tendencias que marcan la diferencia.</p>
-            </div>
-        </div>
-
-        <div class="valor">
-            <img src="" alt="empatia">
-            <div>
-                <h3>Empatía</h3>
-                <p>Entendemos las necesidades de cada persona y las atendemos con calidez.</p>
-            </div>
-        </div>
-
-        <div class="valor">
-            <img src="" alt="responsabilidad">
-            <div>
-                <h3>Responsabilidad</h3>
-                <p>Asumimos con seriedad nuestro rol en la salud visual y el bienestar de la comunidad.</p>
-            </div>
-        </div>
     </section>
 
     <!--section 4-->
-    <section>
-        <h2>NUESTRO EQUIPO</h2>
-        <p>Contamos con un equipo de profesionales altamente capacitados y apasionados por la salud visual, listos para
-            brindarte la mejor asesoría y acompañamiento.</p>
-
-        <div>
-            <img src="" alt="persona1">
-            <h3>Dr. Cristian Ascanio</h3>
-            <p>Optómetra</p>
+    <section class="equipo">
+        <div class="equipo-texto">
+            <h2>NUESTRO EQUIPO</h2>
+            <div class="linea"></div>
+            <p>
+                Contamos con un equipo de profesionales altamente capacitados
+                y apasionados por la salud visual, listos para brindarte la
+                mejor asesoría y acompañamiento.
+            </p>
         </div>
 
-        <div>
-            <img src="" alt="persona2">
-            <h3>Dr.Andrés Mejía </h3>
-            <p>Optómetra</p>
-        </div>
+        <div class="equipo-personas">
 
-        <div>
-            <img src="" alt="persona3">
-            <h3>Dr. María Camila Ruiz</h3>
-            <p>Asesora Comercial</p>
-        </div>
+            <div class="persona">
+                <img src="{{ url_for('static', filename='img/personal1.jpg') }}" alt="personal">
+                <h3>Dra. Laura Gómez</h3>
+                <p>Optómetra</p>
+            </div>
 
-        <div>
-            <img src="" alt="persona4">
-            <h3>Dr. Juan Pablo Torres</h3>
-            <p>Técnico Óptico</p>
+            <div class="persona">
+                <img src="{{ url_for('static', filename='img/personal2.jpg') }}" alt="personal">
+                <h3>Dr. Andrés Mejía</h3>
+                <p>Optómetra</p>
+            </div>
+
+            <div class="persona">
+                <img src="{{ url_for('static', filename='img/personal3.jpg') }}" alt="personal">
+                <h3>María Camila Ruiz</h3>
+                <p>Asesora Comercial</p>
+            </div>
+
+            <div class="persona">
+                <img src="{{ url_for('static', filename='img/personal4.jpg') }}" alt="personal">
+                <h3>Juan Pablo Torres</h3>
+                <p>Técnico Óptico</p>
+            </div>
+
         </div>
     </section>
 
     <!--seccion 5-->
-    <section>
+    <section class="elegirnos">
         <h2>¿POR QUÉ ELEGIRNOS?</h2>
+        <div class="linea"></div>
 
-        <div>
-            <img src="" alt="icono1">
-            <p>Más de 10 años de experiencia cuidando tu visión.</p>
+        <div class="beneficios">
+
+            <div class="beneficio">
+                <img src="{{ url_for('static', filename='img/icono1.png') }}" alt="icono">
+                <p>Más de 10 años de experiencia cuidando tu visión.</p>
+            </div>
+
+            <div class="beneficio">
+                <img src="{{ url_for('static', filename='img/icono2.png') }}" alt="icono">
+                <p>Tecnología de última generación en exámenes y productos.</p>
+            </div>
+
+            <div class="beneficio">
+                <img src="{{ url_for('static', filename='img/icono3.png') }}" alt="icono">
+                <p>Amplia variedad de marcas y productos de alta calidad.</p>
+            </div>
+
+            <div class="beneficio">
+                <img src="{{ url_for('static', filename='img/icono4.png') }}" alt="icono">
+                <p>Atención personalizada y acompañamiento en todo momento.</p>
+            </div>
+
         </div>
-
-        <div>
-            <img src="" alt="icono2">
-            <p>Tecnología de última generación en exámenes y productos.</p>
-        </div>
-
-        <div>
-            <img src="" alt="icono3">
-            <p>Amplia variedad de marcas y productos de alta calidad.</p>
-        </div>
-
-        <div>
-            <img src="" alt="icono4">
-            <p>Atención personalizada y acompañamiento en todo momento.</p>
-        </div>
-
     </section>
-
-    <hr>
 
     {%endblock%}

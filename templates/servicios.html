@@ -1,100 +1,148 @@
 {%extends ("base.html")%}
 {%block content%}
 
-<section>
-    <div>
-        <h1>Servicios</h1>
+<!-- HERO SERVICIOS -->
+<section class="encabezado-servicios">
+    <div class="servicios-texto">
+        <h1>SERVICIOS</h1>
         <h2>Cuidado profesional para tu salud visual.</h2>
-        <p>En Ópticas One Vision, nos dedicamos a ofrecer servicios ópticos de alta calidad para garantizar la salud
-            visual de nuestros clientes. Nuestro equipo de profesionales altamente capacitados utiliza tecnología
-            avanzada para brindar exámenes visuales precisos y soluciones personalizadas.</p>
+        <p>
+            En Ópticas One Vision, nos dedicamos a ofrecer servicios ópticos
+            de alta calidad para garantizar la salud visual de nuestros clientes.
+            Nuestro equipo de profesionales altamente capacitados utiliza tecnología
+            avanzada para brindar exámenes visuales precisos y soluciones personalizadas.
+        </p>
     </div>
 
-    <div>
-        <img src="" alt="imagen servicios">
-    </div>
-</section>
-
-<!--seccion 1-->
-<section>
-    <h2>Nuestros Servicios</h2>
-
-    <div>
-        <img src="" alt="examen visual">
-        <h3>Examen Visual </h3>
-        <p>Realizamos exámenes visuales completos para detectar problemas de visión y prescribir lentes correctivos
-            adecuados.</p>
-    </div>
-
-    <div>
-        <img src="" alt="lentes de contacto">
-        <h3>Lentes de Contacto</h3>
-        <p>Ofrecemos una amplia variedad de lentes de contacto, adaptados a las necesidades individuales de cada
-            cliente.</p>
-    </div>
-
-    <div>
-        <img src="" alt="monturas">
-        <h3>Monturas y Gafas</h3>
-        <p>Contamos con una selección de monturas modernas y gafas de sol de alta calidad para complementar tu estilo
-            personal.</p>
-    </div>
-
-    <div>
-        <img src="" alt="accesorios">
-        <h3>Accesorios y Cuidado</h3>
-        <p>Proporcionamos accesorios y productos de cuidado ocular para mantener tus lentes y ojos en óptimas
-            condiciones.</p>
-    </div>
-
-    <div>
-        <img src="" alt="laboratorio">
-        <h3>Laboratorio Óptico</h3>
-        <p>Contamos con un laboratorio óptico de última generación para fabricar y ajustar lentes personalizadas.</p>
-    </div>
-
-    <div>
-        <img src="" alt="asesoria">
-        <h3>Asesoría Personalizada</h3>
-        <p>Nuestro equipo brinda asesoría personalizada para ayudarte a elegir los productos y servicios que mejor se
-            adapten a tus necesidades visuales.</p>
+    <div class="servicios-imagen">
+        <img src="IMAGEN_SERVICIOS.jpg" alt="Profesional realizando examen visual">
     </div>
 </section>
 
-<!--seccion 2-->
-<section>
-    <div>
-        <img src="" alt="beneficio1">
-        <h3>Calidad Garantizada</h3>
-        <p>Productos y servicios de alta calidad.</p>
+
+<!-- NUESTROS SERVICIOS -->
+<section class="lista-servicios">
+    <h2>NUESTROS SERVICIOS</h2>
+
+    <div class="servicios-grid">
+
+        <div class="servicio-card">
+            <div class="servicio-contenido">
+                <h3>Examen visual</h3>
+                <p>
+                    Evaluamos tu visión para detectar errores refractivos y cuidar
+                    la salud de tus ojos.
+                </p>
+                <a href="#">Conocer más →</a>
+            </div>
+            <img src="EXAMEN_VISUAL.jpg" alt="Examen visual">
+        </div>
+
+        <div class="servicio-card">
+            <div class="servicio-contenido">
+                <h3>Adaptación de lentes</h3>
+                <p>
+                    Te asesoramos para encontrar los lentes perfectos según tu
+                    estilo de vida y necesidades visuales.
+                </p>
+                <a href="#">Conocer más →</a>
+            </div>
+            <img src="LENTES.jpg" alt="Adaptación de lentes">
+        </div>
+
+        <div class="servicio-card">
+            <div class="servicio-contenido">
+                <h3>Adaptación de lentes de contacto</h3>
+                <p>
+                    Proceso personalizado para garantizar comodidad, seguridad y
+                    la mejor visión con tus lentes de contacto.
+                </p>
+                <a href="#">Conocer más →</a>
+            </div>
+            <img src="CONTACTO.jpg" alt="Lentes de contacto">
+        </div>
+
+        <div class="servicio-card">
+            <div class="servicio-contenido">
+                <h3>Laboratorio óptico</h3>
+                <p>
+                    Fabricamos tus lentes con altos estándares de calidad y
+                    precisión para una visión nítida y cómoda.
+                </p>
+                <a href="#">Conocer más →</a>
+            </div>
+            <img src="LABORATORIO.jpg" alt="Laboratorio óptico">
+        </div>
+
+        <div class="servicio-card">
+            <div class="servicio-contenido">
+                <h3>Asesoría en protección visual</h3>
+                <p>
+                    Te orientamos para elegir la mejor protección solar y lentes
+                    especializados para cada actividad.
+                </p>
+                <a href="#">Conocer más →</a>
+            </div>
+            <img src="PROTECCION.jpg" alt="Protección visual">
+        </div>
+
+        <div class="servicio-card">
+            <div class="servicio-contenido">
+                <h3>Mantenimiento y ajustes</h3>
+                <p>
+                    Realizamos ajustes, limpieza y mantenimiento para que tus
+                    lentes siempre estén en perfecto estado.
+                </p>
+                <a href="#">Conocer más →</a>
+            </div>
+            <img src="MANTENIMIENTO.jpg" alt="Mantenimiento de gafas">
+        </div>
+
     </div>
-    <div>
-        <img src="" alt="beneficio2">
-        <h3>Atencion al cliente</h3>
+</section>
+
+
+<!-- BENEFICIOS -->
+<section class="beneficios">
+
+    <div class="beneficio">
+        <h3>Calidad garantizada</h3>
+        <p>Productos y servicios con altos estándares.</p>
+    </div>
+
+    <div class="beneficio">
+        <h3>Atención cercana</h3>
         <p>Te escuchamos y te ofrecemos soluciones a tu medida.</p>
     </div>
-    <div>
-        <img src="" alt="beneficio3">
+
+    <div class="beneficio">
         <h3>Rapidez y eficiencia</h3>
-        <p>Procesos agiles para tu comodidad y satisfacción.</p>
+        <p>Procesos ágiles para tu comodidad.</p>
     </div>
-    <div>
-        <img src="" alt="beneficio4">
+
+    <div class="beneficio">
         <h3>Garantía</h3>
         <p>Respaldo en todos nuestros productos y servicios.</p>
     </div>
+
 </section>
 
-<!--seccion 3-->
-<section>
-    <div>
-        <h2> tu vision merece lo mejor</h2>
-        <p> Agenda tu examen visual con nuestros especialistas y recibe la atencion que tus ojos necesitan.</p>
+
+<!-- LLAMADO A LA ACCIÓN -->
+<section class="agenda">
+
+    <div class="agenda-texto">
+        <h2>Tu visión merece lo mejor</h2>
+        <p>
+            Agenda tu examen visual con nuestros especialistas y recibe la
+            atención que tus ojos necesitan.
+        </p>
+
         <button>Agendar cita</button>
     </div>
 
-    <div>
-        <img src="" alt="doctor">
+    <div class="agenda-imagen">
+        <img src="DOCTOR.jpg" alt="Doctor especialista">
     </div>
 
 </section>
