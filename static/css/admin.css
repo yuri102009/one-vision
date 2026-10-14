@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(234, 238, 247);
+    color: #333;
+}
+
+
+/* ENCABEZADO */
+
+.admin-header {
+    background-color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.admin-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logout-button {
+    text-decoration: none;
+    background-color: #174b8f;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+
+/* CONTENIDO */
+
+.admin-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+.welcome-section h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.welcome-section p {
+    color: #666;
+}
+
+
+/* TARJETAS */
+
+.admin-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.admin-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.admin-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.admin-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.admin-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #174b8f;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.admin-button:hover {
+    background-color: #174b8f;
+}
+
+
+/* PIE DE PÁGINA */
+
+.admin-footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .admin-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .admin-header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .admin-user {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .admin-options {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-container {
+        width: 92%;
+    }
+
+}
+
+/* FOOTER */
+footer {
+    background-color: #063b91;
+    color: white;
+    padding: 25px 50px 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTENIDO PRINCIPAL */
+.footer-contenido {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* COLUMNAS */
+.footer-info,
+.footer-enlaces,
+.footer-sedes,
+.footer-contacto {
+    padding: 0 30px;
+}
+
+/* INFORMACIÓN */
+.footer-info {
+    width: 30%;
+}
+
+.footer-info img {
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 240px;
+}
+
+/* ENLACES */
+.footer-enlaces {
+    width: 15%;
+    border-left: 1px solid #ffffff40;
+}
+
+.footer-enlaces a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+/* SEDES */
+.footer-sedes {
+    width: 25%;
+    border-left: 1px solid #ffffff40;
+}
+
+.footer-sedes p {
+    font-size: 12px;
+    margin: 0 0 8px;
+}
+
+/* CONTACTO */
+.footer-contacto {
+    width: 30%;
+    border-left: 1px solid #ffffff40;
+}
+
+.footer-contacto p {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+/* TÍTULOS */
+footer h3 {
+    font-size: 13px;
+    margin: 0 0 15px;
+}
+
+/* PARTE INFERIOR */
+.footer-abajo {
+    max-width: 1100px;
+    margin: 12px auto 0;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff40;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-abajo p {
+    font-size: 10px;
+    margin: 0;
+}
+
+.footer-politicas {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-politicas a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+
+    footer {
+        padding: 30px 25px 15px;
+    }
+
+    /* Contenido en columna */
+    .footer-contenido {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* Todas las columnas ocupan todo el ancho */
+    .footer-info,
+    .footer-enlaces,
+    .footer-sedes,
+    .footer-contacto {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Quitar los separadores verticales */
+    .footer-enlaces,
+    .footer-sedes,
+    .footer-contacto {
+        border-left: none;
+        border-top: 1px solid #ffffff40;
+        padding-top: 20px;
+    }
+
+    /* Logo */
+    .footer-info img {
+        width: 150px;
+    }
+
+    /* Texto */
+    .footer-info p {
+        max-width: 300px;
+    }
+
+    /* Parte inferior */
+    .footer-abajo {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-politicas {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* login */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(234, 238, 247);
+}
+
+.login-container {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-logo h1 {
+    color: #174b8f;
+    font-size: 30px;
+}
+
+.login-logo p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #174b8f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #174b8f;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #174b8f;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* estilos mensajes */
+
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #263238;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+.admin-header {
+    background-color: #ffffff;
+    min-height: 85px;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.admin-logo img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.admin-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logout-button {
+    background-color: #172b4d;
+    color: white;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #294b7a;
+}
+
+/* Contenido principal */
+.admin-container {
+    width: 88%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+.welcome-section h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #172b4d;
+}
+
+.welcome-section p {
+    color: #687583;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #172b4d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #294b7a;
+}
+
+/* Lista de mensajes */
+.total-mensajes {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #172b4d;
+}
+
+.mensajes-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.mensaje-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    border-left: 5px solid #172b4d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    overflow-wrap: anywhere;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mensaje-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.10);
+}
+
+.mensaje-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8edf2;
+}
+
+.mensaje-header h2 {
+    font-size: 19px;
+    color: #172b4d;
+}
+
+.mensaje-icono {
+    font-size: 24px;
+    color: #426b9a;
+}
+
+.mensaje-datos {
+    padding: 16px 0;
+}
+
+.mensaje-datos p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    color: #526170;
+}
+
+.mensaje-datos strong {
+    color: #263238;
+}
+
+.mensaje-contenido {
+    background-color: #f4f6f9;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.mensaje-contenido h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #172b4d;
+}
+
+.mensaje-contenido p {
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: #526170;
+}
+
+/* Estado sin mensajes */
+.sin-mensajes {
+    background-color: #ffffff;
+    padding: 55px 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sin-mensajes-icono {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.sin-mensajes h2 {
+    color: #172b4d;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.sin-mensajes p {
+    color: #687583;
+    line-height: 1.6;
+}
+
+/* Pie de página */
+.admin-footer {
+    background-color: #172b4d;
+    color: #ffffff;
+    padding: 22px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .admin-header {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+    }
+
+    .admin-logo img {
+        width: 120px;
+    }
+
+    .admin-user {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .logout-button {
+        padding: 9px 12px;
+    }
+
+    .admin-container {
+        width: 92%;
+        margin: 28px auto;
+    }
+
+    .welcome-section h1 {
+        font-size: 23px;
+    }
+
+    .mensajes-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .mensaje-card {
+        padding: 18px;
+    }
+}
