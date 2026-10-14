@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrativo - One Vision</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+</head>
+
+<body>
+
+    <header class="admin-header">
+        <div class="admin-logo">
+            <img class="logo" src="{{url_for('static', filename='img/logo sin fondo2.webp.png')}}" alt="logo">
+        </div>
+
+        <div class="admin-user">
+            <span>Administrador</span>
+            <a href="/logout" class="logout-button">Cerrar sesión</a>
+        </div>
+    </header>
+
+
+    <main class="admin-container">
+
+        <section class="welcome-section">
+            <h2>Bienvenido al panel administrativo</h2>
+            <p>Desde aquí puedes ver los mensajes de los clientes.</p>
+        </section>
+
+
+        <section class="admin-options">
+
+            <div class="admin-card">
+                <div class="card-icon">📩</div>
+                <h3>Mensajes</h3>
+                <p>Consulta los mensajes enviados por los clientes.</p>
+                <a href="/admin/mensajes" class="admin-button">
+                    Ver mensajes
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="admin-footer">
+        <p>© 2026 Ópticas One Vision. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

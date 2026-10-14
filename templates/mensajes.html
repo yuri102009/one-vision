@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes - One Vision</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+</head>
+
+<body>
+
+    <header class="admin-header">
+
+        <div class="admin-logo">
+            <img src="{{ url_for('static', filename='img/logo sin fondo2.webp.png') }}" alt="Logo One Vision">
+        </div>
+
+        <div class="admin-user">
+            <span>Administrador</span>
+            <a href="/logout" class="logout-button">
+                Cerrar sesión
+            </a>
+        </div>
+
+    </header>
+
+    <main class="admin-container">
+
+        <section class="welcome-section">
+            <h1>Mensajes de los clientes</h1>
+            <p>Aquí puedes consultar los mensajes enviados por los clientes.</p>
+
+        </section>
+
+        <section class="mensajes-section">
+
+            {% if mensajes %}
+
+            <p class="total-mensajes">
+                Mensajes recibidos: {{ mensajes|length }}
+            </p>
+
+            <div class="mensajes-lista">
+
+                {% for mensaje in mensajes %}
+
+                <article class="mensaje-card">
+
+                    <div class="mensaje-header">
+                        <h2>{{ mensaje.nombre }}</h2>
+                        <span class="mensaje-icono">✉</span>
+                    </div>
+
+                    <div class="mensaje-datos">
+                        <p>
+                            <strong>Correo:</strong>
+                            {{ mensaje.correo }}
+                        </p>
+
+                        <p>
+                            <strong>Asunto:</strong>
+                            {{ mensaje.asunto }}
+                        </p>
+                    </div>
+
+                    <div class="mensaje-contenido">
+                        <h3>Mensaje</h3>
+                        <p>{{ mensaje.mensaje }}</p>
+                    </div>
+
+                </article>
+
+                {% endfor %}
+
+            </div>
+
+            {% else %}
+
+            <div class="sin-mensajes">
+                <div class="sin-mensajes-icono">📭</div>
+                <h2>No hay mensajes todavía</h2>
+                <p>
+                    Cuando un cliente envíe un mensaje desde el
+                    formulario de contacto, aparecerá aquí.
+                </p>
+            </div>
+
+            {% endif %}
+
+        </section>
+
+    </main>
+
+    <footer class="admin-footer">
+        <p>© 2026 Ópticas One Vision. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

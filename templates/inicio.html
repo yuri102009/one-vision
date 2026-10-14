@@ -42,23 +42,25 @@
 
             </div>
 
-            <button>Agenda tu examen visual</button>
+            <a href="{{ url_for('contacto') }}" class="boton-agenda">
+                Agenda tu examen visual
+            </a>
 
         </div>
 
+        <section class="imagen">
+            <div class="inicio-imagen">
 
-        <div class="inicio-imagen">
+                <img src="{{ url_for('static', filename='img/imagen_principal.webp') }}" alt="Mujer usando gafas">
 
-            <img src="{{ url_for('static', filename='img/imagen1.webp') }}" alt="Mujer usando gafas">
+                <div class="examen-circulo">
+                    <strong>EXAMEN VISUAL<br>PROFESIONAL</strong>
+                    <p>Con tecnología<br>de última<br>generación</p>
+                    <span>✓</span>
+                </div>
 
-            <div class="examen-circulo">
-                <strong>EXAMEN VISUAL<br>PROFESIONAL</strong>
-                <p>Con tecnología<br>de última<br>generación</p>
-                <span>✓</span>
             </div>
-
-        </div>
-
+        </section>
     </div>
 
 </section>
@@ -119,7 +121,9 @@
             innovación y estilo en un solo lugar.
         </p>
 
-        <button>Conoce más →</button>
+        <a href="{{ url_for('productos') }}">
+            Conoce más
+        </a>
 
         <img src="static/img/vision_clara1.webp" alt="Visión">
     </div>
