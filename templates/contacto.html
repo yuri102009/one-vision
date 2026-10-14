@@ -8,83 +8,62 @@
 
     <!-- Información de contacto -->
     <div class="info-contacto">
-
         <h1>CONTÁCTANOS</h1>
-
         <h2>Estamos aquí para ayudarte</h2>
-
         <p class="descripcion">
             Comunícate con nosotros o visítanos en cualquiera de nuestras sedes.
         </p>
 
-
         <!-- Teléfono -->
         <div class="dato-contacto">
-
             <div class="icono-contacto">
                 ☎️
             </div>
-
             <div>
                 <h3>Teléfono</h3>
                 <p>+57 1 123 4567</p>
             </div>
-
         </div>
 
 
         <!-- WhatsApp -->
         <div class="dato-contacto">
-
             <div class="icono-contacto">
                 ◉
             </div>
-
             <div>
                 <h3>WhatsApp</h3>
                 <p>+57 1 123 4567</p>
             </div>
-
         </div>
 
 
         <!-- Correo -->
         <div class="dato-contacto">
-
             <div class="icono-contacto">
                 ✉️
             </div>
-
             <div>
                 <h3>Correo Electrónico</h3>
                 <p>info@onevision.com</p>
             </div>
-
         </div>
-
 
         <!-- Horarios -->
         <div class="dato-contacto">
-
             <div class="icono-contacto">
                 ◷
             </div>
-
             <div>
                 <h3>Horario de Atención</h3>
-
                 <p>
                     Lunes a Sábado: 9:30 AM - 7:30 PM
                 </p>
-
                 <p>
                     Domingo y Festivos: 10:00 AM - 7:00 PM
                 </p>
-
             </div>
-
         </div>
-
     </div>
 
 
@@ -93,11 +72,9 @@
     ========================== -->
 
     <div class="formulario-contacto">
-
         <h2>Envíanos tu mensaje</h2>
 
         <form action="/contacto" method="POST">
-
             <div class="campo">
                 <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
@@ -122,16 +99,11 @@
                 Enviar mensaje
                 <span>➤</span>
             </button>
-
         </form>
-
-
         <p class="privacidad">
             🔒 Tu información está protegida. No compartimos tus datos con terceros.
         </p>
-
     </div>
-
 </section>
 
 
@@ -140,69 +112,51 @@
 ========================== -->
 
 <section class="beneficios">
-
     <div class="beneficio">
-
         <div class="icono-beneficio">♧</div>
-
         <div>
             <h3>Asesoría personalizada</h3>
-
             <p>
                 Nuestros especialistas te ayudan
                 a encontrar lo que necesitas.
             </p>
         </div>
-
     </div>
 
 
     <div class="beneficio">
-
         <div class="icono-beneficio">🚚</div>
-
         <div>
             <h3>Envíos rápidos</h3>
-
             <p>
                 Recibe tus productos en cualquier
                 lugar de Colombia.
             </p>
         </div>
-
     </div>
 
 
     <div class="beneficio">
-
         <div class="icono-beneficio">✓</div>
-
         <div>
             <h3>Compra segura</h3>
-
             <p>
                 Tus datos y pagos están protegidos.
             </p>
         </div>
-
     </div>
 
 
     <div class="beneficio">
-
         <div class="icono-beneficio">★</div>
-
         <div>
             <h3>Garantía y respaldo</h3>
-
             <p>
                 Productos 100% originales
                 y con garantía.
             </p>
         </div>
-
     </div>
-
 </section>
 
 
@@ -211,254 +165,178 @@
 ========================== -->
 
 <section class="sedes">
-
     <h2>NUESTRAS SEDES</h2>
-
     <div class="sedes-contenedor">
-
 
         <!-- SEDE 113 -->
 
         <article class="sede">
-
-            <img src="img/local113.jpg" alt="One Vision Ópticas Local 113">
-
+            <img src="{{url_for('static', filename='img/optica.webp')}}" alt="One Vision Ópticas Local 113">
             <div class="sede-contenido">
-
                 <div class="titulo-sede">
-
                     <span class="pin">📍</span>
-
                     <div>
                         <h3>C.C. El Parque</h3>
                         <strong>One Vision Ópticas</strong>
                         <span>Local 113</span>
                     </div>
-
                 </div>
-
                 <p>
                     📍 Centro Comercial El Parque
                     Cr. 7 # 12 - 54 Local 113
                 </p>
-
                 <p>
                     📍 Soacha - Cundinamarca
                 </p>
-
                 <p>
                     ☎️ 317 368 4348 - (601) 901-11-50
                 </p>
-
                 <p>
                     ✉️ onevisionopticas113@gmail.com
                 </p>
-
                 <div class="redes">
-
                     <a href="#">f</a>
                     <a href="#">◎</a>
                     <a href="#">◉</a>
-
                 </div>
-
             </div>
-
         </article>
 
 
         <!-- SEDE 139 -->
 
         <article class="sede">
-
-            <img src="img/local139.jpg" alt="One Vision Ópticas Local 139">
-
+            <img src="{{url_for('static', filename='img/optica2.webp')}}" alt="One Vision Ópticas Local 139">
             <div class="sede-contenido">
-
                 <div class="titulo-sede">
-
                     <span class="pin">📍</span>
-
                     <div>
                         <h3>C.C. El Parque</h3>
                         <strong>One Vision Ópticas</strong>
                         <span>Local 139</span>
                     </div>
-
                 </div>
-
                 <p>
                     📍 Centro Comercial El Parque
                     Cr. 7 # 12 - 54 Local 139
                 </p>
-
                 <p>
                     📍 Soacha - Cundinamarca
                 </p>
-
                 <p>
                     ☎️ 318 406 7097 - (601) 900-31-20
                 </p>
-
                 <p>
                     ✉️ onevisionopticas113@gmail.com
                 </p>
-
                 <div class="redes">
 
                     <a href="#">f</a>
                     <a href="#">◎</a>
                     <a href="#">◉</a>
-
                 </div>
-
             </div>
-
         </article>
 
 
         <!-- SEDE 134 -->
 
         <article class="sede">
-
-            <img src="" alt="One Vision Ópticas Local 134">
-
+            <img src="{{url_for('static', filename='img/optica3.webp')}}" alt="One Vision Ópticas Local 134">
             <div class="sede-contenido">
-
                 <div class="titulo-sede">
-
                     <span class="pin">📍</span>
-
                     <div>
                         <h3>C.C. Mercurio</h3>
                         <strong>One Vision Ópticas</strong>
                         <span>Local 134</span>
                     </div>
-
                 </div>
-
                 <p>
                     📍 C.C. Mercurio
                     Cr. 7 # 32 - 35
                 </p>
-
                 <p>
                     📍 Soacha - Cundinamarca
                 </p>
-
                 <p>
                     ☎️ (601) 905-36-36
                 </p>
-
                 <p>
                     ✉️ onevisionopticas113@gmail.com
                 </p>
-
                 <div class="redes">
-
                     <a href="#">f</a>
                     <a href="#">◎</a>
                     <a href="#">◉</a>
-
                 </div>
-
             </div>
-
         </article>
 
 
         <!-- SEDE 110 -->
 
         <article class="sede">
-
-            <img src="img/local110.jpg" alt="One Vision Ópticas Local 110">
-
+            <img src="{{url_for('static', filename='img/optica4.webp')}}" alt="One Vision Ópticas Local 110">
             <div class="sede-contenido">
-
                 <div class="titulo-sede">
-
                     <span class="pin">📍</span>
-
                     <div>
                         <h3>Bosa Porvenir</h3>
                         <strong>One Vision Ópticas</strong>
                         <span>Local 110</span>
                     </div>
-
                 </div>
-
                 <p>
                     📍 C.C. Mi Centro Porvenir
                 </p>
-
                 <p>
                     📍 Cll. 54F sur # 93C - 18
                 </p>
-
                 <p>
                     📍 Bosa Porvenir
                 </p>
-
                 <p>
                     ☎️ (601) 747-77-67
                 </p>
-
                 <div class="redes">
-
                     <a href="#">f</a>
                     <a href="#">◎</a>
                     <a href="#">◉</a>
-
                 </div>
-
             </div>
-
         </article>
-
     </div>
-
 </section>
 
 
 <!-- =========================
      MAPA
 ========================== -->
-
 <section class="seccion-mapa">
 
     <div class="informacion-mapa">
-
         <div class="icono-mapa">
             ♧
         </div>
-
         <div>
-
             <h2>¿Hay una sede cerca de ti?</h2>
-
             <p>
                 Encuentra la óptica One Vision más cercana
                 y visítanos para recibir la mejor atención
                 en salud visual.
             </p>
-
             <a href="#mapa" class="boton-mapa">
                 Ver en el mapa
                 <span>📍</span>
             </a>
-
         </div>
-
     </div>
 
-
     <div class="mapa" id="mapa">
-
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OllexgVMC2GfC4rKq4MWyo_pxP7354w&ehbc=2E312F"
             loading="lazy">
         </iframe>
-
     </div>
-
 </section>
 {%endblock %}

@@ -14,8 +14,8 @@
         </p>
     </div>
 
-    <div class="servicios-imagen">
-        <img src="IMAGEN_SERVICIOS.jpg" alt="Profesional realizando examen visual">
+    <div class="imagen-principal-servicios">
+        <img src="{{url_for('static', filename='img/imagen examen.webp')}}" alt="Profesional realizando examen visual">
     </div>
 </section>
 
@@ -27,6 +27,7 @@
     <div class="servicios-grid">
 
         <div class="servicio-card">
+            <img src="{{url_for('static', filename='img/examen visual.webp')}}" alt="Examen visual">
             <div class="servicio-contenido">
                 <h3>Examen visual</h3>
                 <p>
@@ -35,10 +36,10 @@
                 </p>
                 <a href="#">Conocer más →</a>
             </div>
-            <img src="EXAMEN_VISUAL.jpg" alt="Examen visual">
         </div>
 
         <div class="servicio-card">
+            <img src="{{url_for('static', filename='img/adaptacion de lentes.webp')}}" alt="Adaptación de lentes">
             <div class="servicio-contenido">
                 <h3>Adaptación de lentes</h3>
                 <p>
@@ -47,10 +48,10 @@
                 </p>
                 <a href="#">Conocer más →</a>
             </div>
-            <img src="LENTES.jpg" alt="Adaptación de lentes">
         </div>
 
         <div class="servicio-card">
+            <img src="{{url_for('static', filename='img/lentes contacto.webp')}}" alt="Lentes de contacto">
             <div class="servicio-contenido">
                 <h3>Adaptación de lentes de contacto</h3>
                 <p>
@@ -59,10 +60,10 @@
                 </p>
                 <a href="#">Conocer más →</a>
             </div>
-            <img src="CONTACTO.jpg" alt="Lentes de contacto">
         </div>
 
         <div class="servicio-card">
+            <img src="{{url_for('static', filename='img/laboratorio.webp')}}" alt="Laboratorio óptico">
             <div class="servicio-contenido">
                 <h3>Laboratorio óptico</h3>
                 <p>
@@ -71,10 +72,10 @@
                 </p>
                 <a href="#">Conocer más →</a>
             </div>
-            <img src="LABORATORIO.jpg" alt="Laboratorio óptico">
         </div>
 
         <div class="servicio-card">
+            <img src="{{url_for('static', filename='img/proteccion visual.webp')}}" alt="Protección visual">
             <div class="servicio-contenido">
                 <h3>Asesoría en protección visual</h3>
                 <p>
@@ -83,10 +84,10 @@
                 </p>
                 <a href="#">Conocer más →</a>
             </div>
-            <img src="PROTECCION.jpg" alt="Protección visual">
         </div>
 
         <div class="servicio-card">
+            <img src="{{url_for('static', filename='img/mantenimiento.webp')}}" alt="Mantenimiento de gafas">
             <div class="servicio-contenido">
                 <h3>Mantenimiento y ajustes</h3>
                 <p>
@@ -95,7 +96,6 @@
                 </p>
                 <a href="#">Conocer más →</a>
             </div>
-            <img src="MANTENIMIENTO.jpg" alt="Mantenimiento de gafas">
         </div>
 
     </div>
@@ -106,21 +106,25 @@
 <section class="beneficios">
 
     <div class="beneficio">
+        <img src="{{url_for('static', filename='img/logo compromiso.webp')}}" alt="calidad garantizada">
         <h3>Calidad garantizada</h3>
         <p>Productos y servicios con altos estándares.</p>
     </div>
 
     <div class="beneficio">
+        <img src="{{url_for('static', filename='img/logo personas.webp')}}" alt="atención cercana">
         <h3>Atención cercana</h3>
         <p>Te escuchamos y te ofrecemos soluciones a tu medida.</p>
     </div>
 
     <div class="beneficio">
+        <img src="{{url_for('static', filename='img/logo reloj.webp')}}" alt="Rapidez y eficiencia">
         <h3>Rapidez y eficiencia</h3>
         <p>Procesos ágiles para tu comodidad.</p>
     </div>
 
     <div class="beneficio">
+        <img src="{{url_for('static', filename='img/logo calidad.webp')}}" alt="garantia">
         <h3>Garantía</h3>
         <p>Respaldo en todos nuestros productos y servicios.</p>
     </div>
@@ -142,7 +146,7 @@
     </div>
 
     <div class="agenda-imagen">
-        <img src="DOCTOR.jpg" alt="Doctor especialista">
+        <img src="{{url_for('static', filename='img/profesional.webp')}}" alt="Doctor especialista">
     </div>
 
 </section>

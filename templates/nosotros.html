@@ -2,30 +2,32 @@
 {%block content%}
 
 <!--section1-->
-<div class="texto">
-    <h1>NOSOTROS</h1>
-    <h2>Comprometidos con tu visión y bienestar</h2>
-    <p> En Ópticas One Vision trabajamos cada día para brindar bienestar óptico de calidad, con tecnología de
-        vanguardia y un equipo humano dispuesto a cuidar lo más importante: tu salud visual. </p>
-</div>
+<section class="nosotros-contenido">
+    <div class="texto">
+        <h1>NOSOTROS</h1>
+        <h2>Comprometidos con tu visión y bienestar</h2>
+        <p> En Ópticas One Vision trabajamos cada día para brindar bienestar óptico de calidad, con tecnología de
+            vanguardia y un equipo humano dispuesto a cuidar lo más importante: tu salud visual. </p>
+    </div>
 
-<div class="imagen">
-    <img src="static/img/optica.webp" alt="optica">
-</div>
+    <div class="imagen">
+        <img src="static/img/degradado optica.webp" alt="optica">
+    </div>
+</section>
 
 <!--section2-->
 <section>
     <section class="mision-vision">
         <div class="MISION">
-            <img src="static/img/mision.webp" alt="imagen mision">
+            <img class="imagen-mision" src="static/img/mision.webp" alt="imagen mision">
 
             <h2>MISIÓN</h2>
-            <p>Brindar soluciones ópticas de calidad con tecnología avanzada y un servicio humano, para mejorar la salud
-                visual de nuestros clientes, entregando confianza y bienestar en cada experiencia.</p>
+            <p>Brindar soluciones ópticas de calidad con tecnología avanzada y un servicio humano, entregando confianza
+                y bienestar en cada experiencia.</p>
         </div>
 
         <div class="VISION">
-            <img src="static/img/vision.webp" alt="imagen vision">
+            <img class="imagen-vision" src="static/img/vision.webp" alt="imagen vision">
 
             <h2>VISIÓN</h2>
             <p>Ser la óptica líder en Colombia, reconocida por su innovación, calidad y compromiso con la salud visual
@@ -42,7 +44,7 @@
         <div class="contenedor-valores">
 
             <article>
-                <img src="{{ url_for('static', filename='img/calidad.png') }}" alt="calidad">
+                <img src="{{url_for('static', filename='img/logo calidad.webp')}}" alt="calidad">
 
                 <div>
                     <h3>Calidad</h3>
@@ -51,7 +53,7 @@
             </article>
 
             <article>
-                <img src="{{ url_for('static', filename='img/confianza.png') }}" alt="confianza">
+                <img src="{{ url_for('static', filename='img/logo confianza.webp')}}" alt="confianza">
 
                 <div>
                     <h3>Confianza</h3>
@@ -60,7 +62,7 @@
             </article>
 
             <article>
-                <img src="{{ url_for('static', filename='img/compromiso.png') }}" alt="compromiso">
+                <img src="{{ url_for('static', filename='img/logo compromiso.webp')}}" alt="compromiso">
 
                 <div>
                     <h3>Compromiso</h3>
@@ -69,7 +71,7 @@
             </article>
 
             <article>
-                <img src="{{ url_for('static', filename='img/innovacion.png') }}" alt="innovacion">
+                <img src="{{ url_for('static', filename='img/logo innovacion.webp')}}" alt="innovacion">
                 <div>
                     <h3>Innovación</h3>
                     <p>Incorporamos tecnología y tendencias que marcan la diferencia.</p>
@@ -77,7 +79,7 @@
             </article>
 
             <article>
-                <img src="{{ url_for('static', filename='img/empatia.png') }}" alt="empatia">
+                <img src="{{ url_for('static', filename='img/logo empatia.webp')}}" alt="empatia">
                 <div>
                     <h3>Empatía</h3>
                     <p>Entendemos las necesidades de cada persona y las atendemos con calidez.</p>
@@ -85,7 +87,7 @@
             </article>
 
             <article>
-                <img src="{{ url_for('static', filename='img/responsabilidad.png') }}" alt="responsabilidad">
+                <img src="{{ url_for('static', filename='img/logo responsabilidad.webp') }}" alt="responsabilidad">
                 <div>
                     <h3>Responsabilidad</h3>
                     <p>Asumimos con seriedad nuestro rol en la salud visual y el bienestar de la comunidad.</p>
@@ -111,25 +113,25 @@
         <div class="equipo-personas">
 
             <div class="persona">
-                <img src="{{ url_for('static', filename='img/personal1.jpg') }}" alt="personal">
+                <img src="{{ url_for('static', filename='img/Dra_Laura_Gomez.webp') }}" alt="personal">
                 <h3>Dra. Laura Gómez</h3>
                 <p>Optómetra</p>
             </div>
 
             <div class="persona">
-                <img src="{{ url_for('static', filename='img/personal2.jpg') }}" alt="personal">
+                <img src="{{ url_for('static', filename='img/Dr_Andres_Mejia.webp') }}" alt="personal">
                 <h3>Dr. Andrés Mejía</h3>
                 <p>Optómetra</p>
             </div>
 
             <div class="persona">
-                <img src="{{ url_for('static', filename='img/personal3.jpg') }}" alt="personal">
+                <img src="{{ url_for('static', filename='img/Maria_Camila_Ruiz.webp') }}" alt="personal">
                 <h3>María Camila Ruiz</h3>
                 <p>Asesora Comercial</p>
             </div>
 
             <div class="persona">
-                <img src="{{ url_for('static', filename='img/personal4.jpg') }}" alt="personal">
+                <img src="{{ url_for('static', filename='img/Juan_Pablo_Torres.webp') }}" alt="personal">
                 <h3>Juan Pablo Torres</h3>
                 <p>Técnico Óptico</p>
             </div>
@@ -145,22 +147,22 @@
         <div class="beneficios">
 
             <div class="beneficio">
-                <img src="{{ url_for('static', filename='img/icono1.png') }}" alt="icono">
+                <img src="{{url_for('static', filename='img/logo calidad.webp')}}" alt="icono">
                 <p>Más de 10 años de experiencia cuidando tu visión.</p>
             </div>
 
             <div class="beneficio">
-                <img src="{{ url_for('static', filename='img/icono2.png') }}" alt="icono">
+                <img src="{{url_for('static', filename='img/logo persona.webp')}}" alt="icono">
                 <p>Tecnología de última generación en exámenes y productos.</p>
             </div>
 
             <div class="beneficio">
-                <img src="{{ url_for('static', filename='img/icono3.png') }}" alt="icono">
+                <img src="{{ url_for('static', filename='img/logo gafas.webp') }}" alt="icono">
                 <p>Amplia variedad de marcas y productos de alta calidad.</p>
             </div>
 
             <div class="beneficio">
-                <img src="{{ url_for('static', filename='img/icono4.png') }}" alt="icono">
+                <img src="{{ url_for('static', filename='img/logo corazon.webp') }}" alt="icono">
                 <p>Atención personalizada y acompañamiento en todo momento.</p>
             </div>
 
